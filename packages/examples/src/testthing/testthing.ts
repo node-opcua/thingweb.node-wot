@@ -170,7 +170,7 @@ WoT.produce({
         // set property handlers
         thing
             .setPropertyWriteHandler("bool", (value) => {
-                return new Promise((resolve, reject) => {
+                return new Promise<void>((resolve, reject) => {
                     checkPropertyWrite("boolean", typeof value);
                     bool = value;
                     resolve();
@@ -182,7 +182,7 @@ WoT.produce({
                 });
             })
             .setPropertyWriteHandler("int", (value) => {
-                return new Promise((resolve, reject) => {
+                return new Promise<void>((resolve, reject) => {
                     if (value === Math.floor(value)) {
                         checkPropertyWrite("integer", "integer");
                     } else {
@@ -198,31 +198,31 @@ WoT.produce({
                 });
             })
             .setPropertyWriteHandler("num", (value) => {
-                return new Promise((resolve, reject) => {
+                return new Promise<void>((resolve, reject) => {
                     checkPropertyWrite("number", typeof value);
                     num = value;
                     resolve();
                 });
             })
             .setPropertyReadHandler("num", () => {
-                return new Promise((resolve, reject) => {
+                return new Promise<number>((resolve, reject) => {
                     resolve(num);
                 });
             })
             .setPropertyWriteHandler("string", (value) => {
-                return new Promise((resolve, reject) => {
+                return new Promise<void>((resolve, reject) => {
                     checkPropertyWrite("string", typeof value);
                     string = value;
                     resolve();
                 });
             })
             .setPropertyReadHandler("string", () => {
-                return new Promise((resolve, reject) => {
+                return new Promise<string>((resolve, reject) => {
                     resolve(string);
                 });
             })
             .setPropertyWriteHandler("array", (value) => {
-                return new Promise((resolve, reject) => {
+                return new Promise<void>((resolve, reject) => {
                     if (Array.isArray(value)) {
                         checkPropertyWrite("array", "array");
                     } else {
@@ -238,7 +238,7 @@ WoT.produce({
                 });
             })
             .setPropertyWriteHandler("object", (value) => {
-                return new Promise((resolve, reject) => {
+                return new Promise<void>((resolve, reject) => {
                     if (Array.isArray(value)) {
                         checkPropertyWrite("object", "array");
                     } else {
@@ -257,7 +257,7 @@ WoT.produce({
         // set action handlers
         thing
             .setActionHandler("void-void", (parameters) => {
-                return new Promise((resolve, reject) => {
+                return new Promise<void>((resolve, reject) => {
                     checkActionInvocation("void-void", "undefined", typeof parameters);
                     resolve();
                 });
@@ -269,7 +269,7 @@ WoT.produce({
                 });
             })
             .setActionHandler("int-void", (parameters) => {
-                return new Promise((resolve, reject) => {
+                return new Promise<void>((resolve, reject) => {
                     if (parameters === Math.floor(parameters)) {
                         checkActionInvocation("int-void", "integer", "integer");
                     } else {
@@ -322,7 +322,7 @@ WoT.produce({
                 });
             })
             .setActionHandler("obj-void", (parameters) => {
-                return new Promise((resolve, reject) => {
+                return new Promise<void>((resolve, reject) => {
                     checkActionInvocation("complex-void", "object", typeof parameters);
                     resolve();
                 });

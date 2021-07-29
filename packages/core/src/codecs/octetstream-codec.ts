@@ -49,7 +49,7 @@ export default class OctetstreamCodec implements ContentCodec {
         return 'application/octet-stream'
     }
 
-    bytesToValue(bytes: Buffer, schema: TD.DataSchema, parameters?: { [key: string]: string; }): any {
+    bytesToValue(bytes: Buffer, schema: TD.DataSchema, parameters?: { charset: BufferEncoding,[key: string]: string; }): any {
         //console.debug(`OctetstreamCodec parsing '${bytes.toString()}'`);
 
         let bigendian = parameters.byteorder ? parameters.byteorder === "bigendian" : true;

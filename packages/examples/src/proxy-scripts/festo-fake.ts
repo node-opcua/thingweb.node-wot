@@ -77,25 +77,25 @@ WoT.produce({
 	
 	// set action handlers
 	thing.setActionHandler("StartPump", () => {
-		return new Promise<any>((resolve, reject) => {
+		return new Promise<void>((resolve, reject) => {
 			console.warn(">>> Startung pump!");
       resolve();
 		});
   });
   thing.setActionHandler("StopPump", () => {
-		return new Promise<any>((resolve, reject) => {
+		return new Promise<void>((resolve, reject) => {
 			console.warn(">>> Stopping pump!");
       resolve();
 		});
   });
   thing.setActionHandler("OpenValve", () => {
-		return new Promise<any>((resolve, reject) => {
+		return new Promise<void>((resolve, reject) => {
 			console.warn(">>> Opening valve!");
       resolve();
 		});
   });
   thing.setActionHandler("CloseValve", () => {
-		return new Promise<any>((resolve, reject) => {
+		return new Promise<void>((resolve, reject) => {
 			console.warn(">>> Closing valve!");
       resolve();
 		});

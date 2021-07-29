@@ -161,14 +161,14 @@ export default class DefaultServient extends Servient {
                             });
                         });
                         thing.setActionHandler("shutdown", () => {
-                            return new Promise((resolve, reject) => {
+                            return new Promise<void>((resolve, reject) => {
                                 console.debug("[cli/default-servient]","shutting down by remote");
                                 this.shutdown();
                                 resolve();
                             });
                         });
                         thing.setActionHandler("runScript", (script) => {
-                            return new Promise((resolve, reject) => {
+                            return new Promise<void>((resolve, reject) => {
                                 console.debug("[cli/default-servient]","running script", script);
                                 this.runScript(script);
                                 resolve();

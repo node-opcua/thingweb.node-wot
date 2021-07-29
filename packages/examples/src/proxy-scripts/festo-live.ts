@@ -170,7 +170,7 @@ WoT.produce({
 
   // set action handlers
   thing.setActionHandler("StartPump", () => {
-		return new Promise<any>((resolve, reject) => {
+		return new Promise<void>((resolve, reject) => {
       console.info(">>> Startung pump!");
       PumpP101.invokeAction("on")
         .then(() => { resolve(); })
@@ -179,7 +179,7 @@ WoT.produce({
 		});
   });
   thing.setActionHandler("StopPump", () => {
-		return new Promise<any>((resolve, reject) => {
+		return new Promise<void>((resolve, reject) => {
       console.info(">>> Stopping pump!");
       PumpP101.invokeAction("off")
         .then(() => { resolve(); })
@@ -188,7 +188,7 @@ WoT.produce({
 		});
   });
   thing.setActionHandler("OpenValve", () => {
-		return new Promise<any>((resolve, reject) => {
+		return new Promise<void>((resolve, reject) => {
       console.info(">>> Opening valve!");
       ValveV102.invokeAction("open")
         .then(() => { resolve(); })
@@ -197,7 +197,7 @@ WoT.produce({
 		});
   });
   thing.setActionHandler("CloseValve", () => {
-		return new Promise<any>((resolve, reject) => {
+		return new Promise<void>((resolve, reject) => {
       console.info(">>> Closing valve!");
       ValveV102.invokeAction("close")
         .then(() => { resolve(); })

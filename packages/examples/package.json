@@ -13,7 +13,8 @@
     "typescript": "3.7.5",
     "typescript-standard": "0.3.36",
     "@types/express-oauth-server": "^2.0.2",
-    "express-oauth-server": "^2.0.0"
+    "express-oauth-server": "^2.0.0",
+	"@types/express-serve-static-core": "4.17.24"
   },
   "dependencies": {
     "@node-wot/td-tools": "0.7.8",

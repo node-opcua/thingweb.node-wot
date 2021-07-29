@@ -249,7 +249,7 @@ Assumes one medium americano if not specified, but time and mode are mandatory f
     // Override a write handler for availableResourceLevel property,
     // utilizing the uriVariables properly
     thing.setPropertyWriteHandler('availableResourceLevel', (val, options) => {
-        return new Promise((resolve, reject) => {
+        return new Promise<void>((resolve, reject) => {
             // Check if uriVariables are provided
             if (options && typeof options === 'object' && 'uriVariables' in options) {
                 const uriVariables: any = options['uriVariables'];

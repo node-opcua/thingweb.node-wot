@@ -52,14 +52,14 @@ export class Client {
 		if (credentials.password) {
 			this.router.password = credentials.password;
 		}
-		return new Promise((resolve, reject) => {
+		return new Promise<void>((resolve, reject) => {
 			resolve();
 		});
 	}
 
 	openRouter() {
 		let self = this;
-		return new Promise((resolve, reject) => {
+		return new Promise<void>((resolve, reject) => {
 			if (self.router.connected) { //close the old one
 				this.closeRouter();
 			}

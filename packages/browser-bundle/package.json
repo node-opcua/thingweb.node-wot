@@ -17,7 +17,12 @@
     "@node-wot/binding-http": "0.7.8",
     "@node-wot/binding-websockets": "0.7.8",
     "browserify": "16.5.0",
-    "tinyify": "2.5.2"
+    "is-typed-array": "1.1.5",
+    "is-generator-function": "1.0.9",
+    "which-typed-array":"1.1.4",
+    "tinyify": "2.5.2",
+    "mkdirp-classic": "0.5.3",
+    "@goto-bus-stop/envify":"5.0.0"
   },
   "dependencies": {
   },

@@ -38,10 +38,10 @@ try {
 
     // set action handlers
     thing.setActionHandler("reset", () => {
-      return new Promise<any>((resolve, reject) => {
+      return new Promise<void>((resolve, reject) => {
         console.info("Resetting");
         counter = 0;
-        return new Promise((resolve, reject) => {
+        return new Promise<void>((resolve, reject) => {
           resolve();
         });
       });

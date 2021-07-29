@@ -103,7 +103,7 @@ export default class NetconfClient implements ProtocolClient {
 		} catch (err) {
 			throw err;
 		}
-		return new Promise<any>((resolve, reject) => {
+		return new Promise<void>((resolve, reject) => {
 			resolve();
 		});
 	}

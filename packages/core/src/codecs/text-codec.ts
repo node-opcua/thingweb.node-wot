@@ -32,7 +32,7 @@ export default class TextCodec implements ContentCodec {
     return this.subMediaType;
   }
 
-  bytesToValue(bytes: Buffer, schema: TD.DataSchema, parameters: {[key: string]: string}): any {
+  bytesToValue(bytes: Buffer, schema: TD.DataSchema, parameters: {charset: BufferEncoding, [key: string]: string}): any {
     //console.debug(`TextCodec parsing '${bytes.toString()}'`);
     
     let parsed: any;

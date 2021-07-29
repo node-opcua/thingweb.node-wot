@@ -37,7 +37,7 @@ WoT.produce({
 	console.info("Setup MQTT broker address/port details in wot-servient.conf.json (also see sample in wot-servient.conf.json_mqtt)!");
 
 	thing.setActionHandler("resetCounter", () => {
-		return new Promise<any>((resolve, reject) => {
+		return new Promise<void>((resolve, reject) => {
 			console.log("Resetting counter");
 			counter = 0;
 			resolve();

@@ -174,7 +174,7 @@ function main() {
                     }
                   },
                   (input: Color) => {
-                    return new Promise((resolve, reject) => {
+                    return new Promise<void>((resolve, reject) => {
                         unicorn.invokeAction('cancel');
                         unicorn.writeProperty('color', input);
                         resolve();
@@ -185,7 +185,7 @@ function main() {
                   "cancel",
                   {},
                   () => {
-                    return new Promise((resolve, reject) => {
+                    return new Promise<void>((resolve, reject) => {
                       if (gradientTimer) {
                         console.info('>> canceling timer');
                         clearInterval(gradientTimer);
