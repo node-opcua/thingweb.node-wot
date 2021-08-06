@@ -93,7 +93,9 @@ class CoapClientTest {
         coapServer.start(null).then( () => {
             let coapClient = new CoapClient(coapServer);
             coapClient.readResource({ href: "coap://localhost:56834/" }).then( (res) => {
-                done();
+                coapServer.stop().then( () => {
+                    done();
+                });
             });
         });
     }
