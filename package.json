@@ -10,10 +10,11 @@
   "devDependencies": {
     "@types/mocha": "^9.0.0",
     "@types/chai": "^4.2.21",
-    "lerna": "^3.20.2",
+    "lerna": "^3.22.1",
     "lerna-run": "0.0.2",
     "rimraf": "3.0.2",
     "typescript": "3.7.5",
+    "ts-node": "10.1.0",
     "mocha": "9.0.3",
     "chai": "^4.3.4"
   },
@@ -30,6 +31,7 @@
     "codestyle": "lerna run codestyle",
     "clean": "lerna clean",
     "unlock": "lerna-run rimraf package-lock.json",
-    "publish": "lerna publish --force-publish=*"
+    "publish": "lerna publish --force-publish=*",
+    "postinstall": "npm run bootstrap"
   }
 }

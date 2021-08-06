@@ -22,7 +22,7 @@
     "mocha-typescript": "1.1.8",
     "request": "2.88.0",
     "request-promise": "4.2.5",
-    "ts-node": "8.6.2",
+    "ts-node": "10.1.0",
     "typescript": "3.7.5",
     "typescript-standard": "0.3.36"
   },
