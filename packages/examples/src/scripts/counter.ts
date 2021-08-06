@@ -29,6 +29,8 @@ let WoT: WoT.WoT;
 let count: number;
 let lastChange: string;
 
+// const definition = await readOPCUAPubSubConfigAndConvertToThing();
+
 WoT.produce({
 	title: "counter",
 	titles: {

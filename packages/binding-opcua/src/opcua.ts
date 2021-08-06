@@ -16,7 +16,6 @@
 export { default as OpcuaClient } from './opcua-client';
 export { default as OpcuaClientFactory } from './opcua-client-factory';
 import { Form } from "@node-wot/td-tools";
-export * from './opcua';
 export * from './opcua-client-factory';
 
 export interface OpcuaConfig {

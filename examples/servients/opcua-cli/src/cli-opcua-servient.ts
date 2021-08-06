@@ -123,21 +123,21 @@ export default class OpcuaServient extends Servient {
                             });
                         });
                         thing.setActionHandler("shutdown", () => {
-                            return new Promise((resolve, reject) => {
+                            return new Promise<void>((resolve, reject) => {
                                 console.info("shutting down by remote");
                                 this.shutdown();
                                 resolve();
                             });
                         });
-                        thing.setActionHandler("runScript", (script) => {
-                            return new Promise((resolve, reject) => {
+                        thing.setActionHandler("runScript", (script: string) => {
+                            return new Promise<void>((resolve, reject) => {
                                 console.log("running script", script);
                                 this.runScript(script);
                                 resolve();
                             });
                         });
                         thing.setPropertyReadHandler("things", () => {
-                            return new Promise((resolve, reject) => {
+                            return new Promise<void>((resolve, reject) => {
                                 console.log("returnings things");
                                 resolve(this.getThings());
                             });
@@ -145,9 +145,9 @@ export default class OpcuaServient extends Servient {
                         thing.expose().then(() => {
                             // pass on WoTFactory
                             resolve(myWoT);
-                        }).catch((err) => reject(err));
+                        }).catch((err: Error) => reject(err));
                     });
-                }).catch((err) => reject(err));
+                }).catch((err: Error) => reject(err));
         });
     }
      

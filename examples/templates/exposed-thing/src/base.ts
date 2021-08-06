@@ -104,14 +104,14 @@ export class WotDevice {
     }
 
     private myPropertyHandler(){
-		return new Promise((resolve, reject) => {
+		return new Promise<void>((resolve, reject) => {
 			// read something
 			resolve();
 		});
     }
 
     private myActionHandler(inputData){
-		return new Promise((resolve, reject) => {
+		return new Promise<void>((resolve, reject) => {
 			// do something with inputData
 			resolve();
 		});	

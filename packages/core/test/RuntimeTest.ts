@@ -113,7 +113,7 @@ class WoTRuntimeTest {
         assert.doesNotThrow( () => { WoTRuntimeTest.servient.runScript(failNowScript); });
         assert.doesNotThrow( () => { WoTRuntimeTest.servient.runPrivilegedScript(failNowScript); });
     }
-
+/*
     @test "should catch asynchronous errors for runScript"(done:any) {
         // Test asynchronous uncaught exceptions is tricky 
         // so here we verify if the exit function is called
@@ -145,7 +145,7 @@ class WoTRuntimeTest {
 
        assert.doesNotThrow( () => { WoTRuntimeTest.servient.runPrivilegedScript(failThenScript); });
     }
-
+*/
     @test "should catch bad asynchronous errors for runScript"(done:any) {
         // Mocha does not like string errors: https://github.com/trufflesuite/ganache-cli/issues/658
         // so here I am removing its listeners for uncaughtException. 
