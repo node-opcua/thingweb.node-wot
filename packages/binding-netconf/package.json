@@ -37,6 +37,6 @@
   },
   "scripts": {
     "build": "tsc",
-    "test": "mocha --require ts-node/register test/netconf-client-test.ts"
+    "test": "mocha  test/netconf-client-test.ts"
   }
 }

@@ -53,6 +53,6 @@
   },
   "scripts": {
     "build": "tsc",
-    "test": "mocha --compilers ts:ts-node/register"
+    "test": "mocha --exit"
   }
 }

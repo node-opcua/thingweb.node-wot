@@ -33,6 +33,6 @@
   },
   "scripts": {
     "build": "tsc && webpack",
-    "test": "mocha --compilers ts:ts-node/register"
+    "test": "mocha"
   }
 }
