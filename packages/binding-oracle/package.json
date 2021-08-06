@@ -12,7 +12,7 @@
   "types": "dist/oracle.d.ts",
   "devDependencies": {
     "@types/chai": "4.2.8",
-    "@types/node": "13.7.0",
+    "@types/node": "16.4.13",
     "chai": "4.2.0",
     "mocha": "3.5.3",
     "mocha-typescript": "1.1.8",

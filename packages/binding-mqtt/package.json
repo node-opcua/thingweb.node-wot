@@ -15,7 +15,7 @@
   "types": "dist/mqtt.d.ts",
   "devDependencies": {
     "@types/chai": "4.2.8",
-    "@types/node": "13.7.0",
+    "@types/node": "16.4.13",
     "@types/request-promise": "4.1.45",
     "chai": "4.2.0",
     "mocha": "3.5.3",

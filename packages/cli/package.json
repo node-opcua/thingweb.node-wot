@@ -17,7 +17,7 @@
     "wot-servient": "dist/cli.js"
   },
   "devDependencies": {
-    "@types/node": "13.7.0",
+    "@types/node": "16.4.13",
     "wot-typescript-definitions": "0.7.3",
     "ts-node": "8.6.2",
     "typescript": "3.7.5",

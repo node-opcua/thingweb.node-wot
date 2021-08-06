@@ -16,7 +16,7 @@
   "browser": "dist/ws-browser.js",
   "devDependencies": {
     "@types/chai": "4.2.8",
-    "@types/node": "13.7.0",
+    "@types/node": "16.4.13",
     "@types/ws": "7.2.1",
     "chai": "4.2.0",
     "mocha": "3.5.3",

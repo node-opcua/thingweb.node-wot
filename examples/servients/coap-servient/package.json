@@ -19,8 +19,8 @@
   ],
   "devDependencies": {
     "wot-typescript-definitions": "0.7.3",
-    "@types/node": "10.9.4",
-    "typescript": "2.9.2"
+    "@types/node": "16.4.13",
+    "typescript": "3.7.5"
   },
   "dependencies": {
     "@node-wot/core": "0.7.2",
