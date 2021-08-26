@@ -1,10 +1,14 @@
 #!/bin/sh
+export HERE=`pwd`/`dirname "$0"`
 
-export PACKAGE_FOLDER=`pwd`/tmp
+export PACKAGE_FOLDER=${HERE}/tmp
+
+cd ${HERE}
 mkdir -p $PACKAGE_FOLDER
+echo "HERE          =${HERE}"
+echo "PACKAGE_FOLDER=${PACKAGE_FOLDER}"
 
-cd ../packages/td-tools
-echo "PACKAGE_FOLDER= ${PACKAGE_FOLDER}"
+cd ${HERE}/../packages/td-tools
 
 cd ../td-tools; npm pack ; mv *.tgz ${PACKAGE_FOLDER};
 cd ../core; npm pack ; mv *.tgz ${PACKAGE_FOLDER};
