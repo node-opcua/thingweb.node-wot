@@ -27,7 +27,7 @@ import OpcuaClient from "../src/opcua-client";
 import { OpcuaServer } from "./opcua-server";
 import { DataType } from "node-opcua-client";
 
-xdescribe("OPCUA client test", function () {
+describe("OPCUA client test", function () {
     let server: OpcuaServer;
     let codec: OpcuaCodec;
     let client: OpcuaClient;

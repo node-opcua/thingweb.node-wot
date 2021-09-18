@@ -33,7 +33,7 @@
     "case-1.5.3": "npm:case@^1.5.3",
     "node-opcua-client": "^2.43.0",
     "typescript": "3.7.5",
-    "url-parse": "^1.4.7",
+     "url-parse": "^1.5.3",
     "wot-typescript-definitions": "0.7.3",
     "xml-writer": "^1.7.0"
   },

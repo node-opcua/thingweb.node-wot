@@ -20,7 +20,11 @@
     "chai": "^4.3.4",
     "chai-as-promised": "^7.1.1",
     "chai-spies": "1.0.0",
-    "@testdeck/mocha": "0.1.2"
+    "@testdeck/mocha": "0.1.2",
+    "@types/url-parse": "^1.4.3",
+    "case-1.5.3": "npm:case@^1.5.3",
+    "node-netconf": "^1.1.1",
+    "url-parse": "^1.5.3"
   },
   "scripts": {
     "bootstrap": "lerna bootstrap --no-ci",
@@ -38,6 +42,5 @@
     "publish": "lerna publish --force-publish=*",
     "postinstall": "npm run bootstrap"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }

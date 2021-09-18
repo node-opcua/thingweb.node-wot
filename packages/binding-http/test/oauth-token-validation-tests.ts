@@ -1,4 +1,4 @@
-import { suite, test, slow, timeout } from 'mocha-typescript';
+import { suite, test, slow, timeout } from '@testdeck/mocha';
 import * as express from 'express';
 import { should } from "chai";
 import create, { IntrospectionEndpoint, Validator, EndpointValidator } from '../src/oauth-token-validation'
